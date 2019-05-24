@@ -6,3 +6,6 @@ header{
     margin: 20px;
     background: linear-gradient(#2A0A2A, #111111)
 }
+div{
+  background: green
+}
