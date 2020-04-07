@@ -1,29 +1,46 @@
 /*
-	Lens by HTML5 UP
+	Astral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Wrapper */
+
+	#wrapper {
+		opacity: 1 !important;
+	}
+
+/* Nav */
+
+	#nav a {
+		opacity: 1.0;
+	}
+
+		#nav a:before, #nav a:after {
+			display: none;
+		}
+
+		#nav a span {
+			top: 0;
+			opacity: 1.0;
+		}
+
+			#nav a span:after {
+				display: none;
+			}
+
 /* Main */
 
 	#main {
-		opacity: 1 !important;
-		right: 0 !important;
+		background: none;
+		box-shadow: none;
 	}
 
-	body:before {
-		content: 'Javascript is disabled :(';
-		display: block;
-		position: absolute;
-		top: 50%;
-		width: calc(100% - 22.5em * 0.333333333);
-		height: 4em;
-		margin-top: -2em;
-		color: #282828;
-		cursor: default;
-		font-size: 3em;
-		line-height: 4em;
-		text-align: center;
-		white-space: nowrap;
-		left: 0;
-	}
+		#main > .panel {
+			background: #ffffff;
+			margin-bottom: 2em;
+		}
+
+			#main > .panel:last-child {
+				margin-bottom: 0;
+			}
