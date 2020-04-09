@@ -1306,7 +1306,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/bg2.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -2006,7 +2006,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 0;
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
-					width: 17em;
+					width: 15em;
 					height: 100%;
 				}
 
@@ -2112,7 +2112,7 @@ input, select, textarea {
 					}
 
 						#main > .panel.intro .pic {
-							height: 25em;
+							height: 55em;
 							width: 100%;
 						}
 
@@ -2126,7 +2126,7 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#main > .panel.intro .pic {
-						height: 20em;
+						height: 50em;
 					}
 
 					#main > .panel.intro header {
