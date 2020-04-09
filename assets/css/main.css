@@ -1308,7 +1308,7 @@ input, select, textarea {
 	body {
 		background-image: url("images/overlay.png"), url("images/bg2.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size:100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -1533,7 +1533,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: #555;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1779,6 +1779,8 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			color: #ffffff;
+			background-color: #555555aa;
+			border-radius: 0.2em;
 			width: 1em;
 			height: 1em;
 			line-height: 0.9em;
