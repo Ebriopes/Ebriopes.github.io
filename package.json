@@ -1,0 +1,41 @@
+{
+  "name": "ebriopes",
+  "version": "1.0.0",
+  "description": "Personal web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ebriopes/Ebriopes.github.io.git"
+  },
+  "keywords": [
+    "portafolio"
+  ],
+  "author": "Ebriopes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ebriopes/Ebriopes.github.io/issues"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
