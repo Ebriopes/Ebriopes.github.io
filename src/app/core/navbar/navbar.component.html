@@ -1,0 +1,26 @@
+<header class="nav-wrapper" [class.open]="openNav" #wrapper>
+  <!-- Close/open menu button -->
+  <div
+    class="hamburger-menu"
+    [class.open]="openNav"
+    (click)="openNav = !openNav"
+  >
+    <div class="icon"></div>
+  </div>
+
+  <!-- Menu -->
+  <nav class="navbar">
+    <ul #menuOptions>
+      <li class="selected">Home</li>
+      <li>Projects</li>
+      <li>About</li>
+    </ul>
+  </nav>
+</header>
+
+<!-- The Clip-path to show shape background in the menu -->
+<svg viewBox="0 0 100 80">
+  <clipPath id="menu-select" clipPathUnits="objectBoundingBox">
+    <path d="M1,0 q0,0.25 -.5,.1 t-.5,.4 t.5,.4 t.5,.1 z" />
+  </clipPath>
+</svg>

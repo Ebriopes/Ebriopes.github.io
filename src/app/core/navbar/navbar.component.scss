@@ -1,0 +1,139 @@
+:host {
+  position: sticky;
+  display: block;
+  width: 100vw;
+}
+
+$dark: #212121;
+$light: #efefef;
+$color: #b3e5fc;
+
+@mixin btn($left, $top) {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: $top;
+  left: $left;
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 18px;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+.nav-wrapper {
+  position: fixed;
+  right: 0;
+  max-height: 5rem;
+  max-width: 5rem;
+  overflow: hidden;
+  backdrop-filter: blur(1rem);
+  transition: all 750ms ease;
+
+  &.open {
+    max-width: 100%;
+    max-height: 100%;
+
+    .navbar {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  z-index: 1;
+
+  @include btn(1rem, 1rem);
+
+  .icon {
+    @include icon(11px, 3rem);
+
+    &:before {
+      @include icon-before(11px, 3rem, -18px);
+    }
+
+    &:after {
+      @include icon-after(11px, 3rem, 18px);
+    }
+  }
+
+  &.open {
+    .icon {
+      transform: rotateZ(-180deg);
+
+      &:before {
+        transform: rotateZ(-45deg) scaleX(0.75) translate(-20px, -3px);
+      }
+
+      &:after {
+        transform: rotateZ(45deg) scaleX(0.75) translate(-20px, 3px);
+      }
+    }
+  }
+
+  &:hover .icon {
+    &::before,
+    &::after {
+      background-color: teal;
+    }
+  }
+}
+
+.navbar {
+  padding-block-start: 5rem;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 750ms ease;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 1rem;
+      clip-path: url(#menu-select);
+      background-size: 0%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-image: linear-gradient(To right, teal, teal);
+      backdrop-filter: blur(1rem);
+      font-size: 3rem;
+      cursor: pointer;
+      transition: all 500ms ease, color 500ms 150ms ease;
+
+      &:hover {
+        background-size: 100%;
+        color: antiquewhite;
+      }
+    }
+  }
+}
