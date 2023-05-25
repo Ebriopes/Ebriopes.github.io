@@ -1,0 +1,112 @@
+@mixin cards-shadow($middle-color: var(--secondary-alt)) {
+  transition: all 200ms ease-out;
+
+  &:hover,
+  &:focus {
+    transform: translate(4px, 4px);
+    box-shadow: -4px -4px $middle-color, -8px -8px var(--primary);
+
+    &:active {
+      transform: translate(2px, 2px);
+      box-shadow: -2px -2px $middle-color, -4px -4px var(--primary);
+    }
+  }
+}
+
+@mixin letters-3d {
+  /*:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
+    /* 
+    --color-primary: #5192ED;
+    --color-secondary: #69A1F0;
+    --color-tertiary: #7EAEF2;
+    --color-quaternary: #90BAF5;
+    --color-quinary: #A2C4F5;
+  } */
+  $color-primary: #f6aca2;
+  $color-secondary: #f49b90;
+  $color-tertiary: #f28b7d;
+  $color-quaternary: #f07a6a;
+  $color-quinary: #ee6352;
+
+  .text-shadows {
+    text-shadow: 1px 1px 0 $color-secondary, 2px 2px 0 $color-tertiary,
+      3px 3px $color-quaternary, 4px 4px 0 $color-quinary;
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    // text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: $color-primary;
+    //color: transparent;
+    //background-color: white;
+    //background-clip: text;
+    transform: translate(-12px, -12px);
+    animation: shadows 2.2s 1s ease-in infinite, move 2.2s 1s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+
+  // @keyframes shadows {
+  //   0% {
+  //     text-shadow: none;
+  //   }
+  //   10% {
+  //     text-shadow: 3px 3px 0 $color-secondary;
+  //   }
+  //   20% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary;
+  //   }
+  //   30% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
+  //       9px 9px $color-quaternary;
+  //   }
+  //   40% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
+  //       9px 9px $color-quaternary, 12px 12px 0 $color-quinary;
+  //   }
+  //   50% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
+  //       9px 9px $color-quaternary, 12px 12px 0 $color-quinary;
+  //   }
+  //   60% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
+  //       9px 9px $color-quaternary, 12px 12px 0 $color-quinary;
+  //   }
+  //   70% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary,
+  //       9px 9px $color-quaternary;
+  //   }
+  //   80% {
+  //     text-shadow: 3px 3px 0 $color-secondary, 6px 6px 0 $color-tertiary;
+  //   }
+  //   90% {
+  //     text-shadow: 3px 3px 0 $color-secondary;
+  //   }
+  //   100% {
+  //     text-shadow: none;
+  //   }
+  // }
+
+  // @keyframes move {
+  //   0% {
+  //     transform: translate(0px, 0px);
+  //   }
+  //   40% {
+  //     transform: translate(-12px, -12px);
+  //   }
+  //   50% {
+  //     transform: translate(-12px, -12px);
+  //   }
+  //   60% {
+  //     transform: translate(-12px, -12px);
+  //   }
+  //   100% {
+  //     transform: translate(0px, 0px);
+  //   }
+  // }
+}
