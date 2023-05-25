@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { LandingRoutingModule } from './landing-routing.module';
 import { LandingComponent } from './landing.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MouseParallaxDirective } from 'src/app/shared/mouseParallax.directive';
 
 @NgModule({
-  declarations: [
-    LandingComponent
-  ],
+  declarations: [LandingComponent],
   imports: [
     CommonModule,
-    LandingRoutingModule
-  ]
+    LandingRoutingModule,
+    FontAwesomeModule,
+    MouseParallaxDirective,
+  ],
 })
-export class LandingModule { }
+export class LandingModule {}
