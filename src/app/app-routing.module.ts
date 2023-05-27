@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./core/landing/landing.module').then((m) => m.LandingModule),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./core/contact/contact.module').then((m) => m.ContactModule),
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
