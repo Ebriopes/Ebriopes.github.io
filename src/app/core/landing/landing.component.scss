@@ -159,6 +159,7 @@ section {
       }
 
       & img {
+        border-radius: 2rem 0;
         @include cards-shadow(var(--bg-color));
       }
     }
