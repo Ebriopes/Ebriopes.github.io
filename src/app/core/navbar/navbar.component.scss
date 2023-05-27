@@ -114,14 +114,20 @@ header {
 
     li {
       list-style: none;
-      padding: 1rem;
-      color: var(--secondary-alt);
-      font-size: 3rem;
-      cursor: pointer;
-      transition: all 500ms ease, color 500ms 150ms ease;
+      padding: 0.5rem 1rem;
 
-      &:hover {
-        color: var(--primary);
+      & > a {
+        color: var(--secondary-alt);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        cursor: pointer;
+        transition: color 250ms 50ms ease;
+
+        &:hover {
+          color: var(--primary);
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -176,5 +182,9 @@ header {
         font-weight: 800;
       }
     }
+  }
+
+  .hamburger-menu.open {
+    left: -4.5rem;
   }
 }
