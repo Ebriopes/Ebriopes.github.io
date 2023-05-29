@@ -1,14 +1,17 @@
-@mixin cards-shadow($middle-color: var(--secondary-alt)) {
+@mixin cards-shadow(
+  $middle-color: var(--secondary-alt),
+  $last-color: var(--primary)
+) {
   transition: all 200ms ease-out;
 
   &:hover,
   &:focus {
     transform: translate(4px, 4px);
-    box-shadow: -4px -4px $middle-color, -8px -8px var(--primary);
+    box-shadow: -4px -4px $middle-color, -8px -8px $last-color;
 
     &:active {
       transform: translate(2px, 2px);
-      box-shadow: -2px -2px $middle-color, -4px -4px var(--primary);
+      box-shadow: -2px -2px $middle-color, -4px -4px $last-color;
     }
   }
 }
