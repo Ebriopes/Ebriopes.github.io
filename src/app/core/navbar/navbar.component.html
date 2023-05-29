@@ -20,14 +20,21 @@
       <li>
         <a
           routerLink="/home"
-          routerLinkActive="test"
+          routerLinkActive="active"
           (click)="openNav = !openNav">
           Home
         </a>
       </li>
       <li *ngIf="false"><a [routerLink]="'/home'">Projects</a></li>
       <li *ngIf="false"><a [routerLink]="'/home'">About</a></li>
-      <li><a routerLink="/contact" (click)="openNav = !openNav">Contact</a></li>
+      <li>
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          (click)="openNav = !openNav">
+          Contact
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
