@@ -1,5 +1,6 @@
 <header>
   <p class="title text-shadows waviy ps-4">
+    <!-- The style prop is set in this way to allow the flip effect -->
     <span *ngFor="let letter of titleArr; index as i" [style]="'--i:' + i">
       {{ letter }}
     </span>
@@ -22,17 +23,15 @@
           routerLink="/home"
           routerLinkActive="active"
           (click)="openNav = !openNav">
-          Home
+          Inicio
         </a>
       </li>
-      <li *ngIf="false"><a [routerLink]="'/home'">Projects</a></li>
-      <li *ngIf="false"><a [routerLink]="'/home'">About</a></li>
       <li>
         <a
           routerLink="/contact"
           routerLinkActive="active"
           (click)="openNav = !openNav">
-          Contact
+          Contacto
         </a>
       </li>
     </ul>
