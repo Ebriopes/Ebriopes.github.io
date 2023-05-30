@@ -1,0 +1,39 @@
+<header>
+  <p class="title text-shadows waviy ps-4">
+    <!-- The style prop is set in this way to allow the flip effect -->
+    <span *ngFor="let letter of titleArr; index as i" [style]="'--i:' + i">
+      {{ letter }}
+    </span>
+  </p>
+
+  <!-- Menu -->
+  <nav class="nav-wrapper" [class.open]="openNav">
+    <!-- Close/open menu button -->
+    <div
+      class="hamburger-menu"
+      [class.open]="openNav"
+      (click)="openNav = !openNav">
+      <div class="icon"></div>
+    </div>
+
+    <!-- Links to other pages -->
+    <ul>
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="active"
+          (click)="openNav = !openNav">
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          (click)="openNav = !openNav">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

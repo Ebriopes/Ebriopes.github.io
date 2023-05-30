@@ -1,0 +1,221 @@
+<main>
+  <section id="landing">
+    <div class="title">
+      <h1>
+        <span>Daniel</span>
+        <span>Vargas</span>
+      </h1>
+    </div>
+
+    <div mouseParallax [ratio]="0.075" class="image-principal">
+      <img src="images/daniel.webp" alt="Picture of Daniel, own of the site" />
+    </div>
+
+    <h2 class="description">
+      <p>Desde CDMX</p>
+      <!-- <div id="typed-strings">
+        <p>
+          Soy
+          <strong>Gamer</strong>
+        </p>
+        <p>
+          Soy
+          <em>Desarrollador</em>
+        </p>
+      </div> -->
+      <span
+        class="description-typed text-decoration-underline text-uppercase font-weight-bold"></span>
+    </h2>
+  </section>
+
+  <hr />
+
+  <section id="about">
+    <h3><a routerLink="/home" fragment="about">Sobre Daniel</a></h3>
+
+    <div class="introduction">
+      <p>
+        Soy un programador web especializado principalmente en el desarrollo
+        frontend.
+      </p>
+
+      <p>
+        Las principales tecnologías que manejo son
+        <b>Angular</b>
+        ,
+        <b>JS/TS</b>
+        y
+        <b>SASS.</b>
+      </p>
+
+      <h4>¿Cómo?</h4>
+      <p>
+        Desde joven tuve interés en la tecnología, cómo funcionaba y que podía
+        hacer con ella. A lo largo de los años fui empapandome del mundo
+        <i>tech</i>
+        , primero por simple curiosidad pero en algún momento comencé a probar
+        este ambiente de retos y posibilidades, con miles de soluciones
+        distintas.
+      </p>
+
+      <p>
+        Ahora el desarrollo de tecnología es una actividad que me apasiona y me
+        motiva a seguir superando retos.
+      </p>
+    </div>
+
+    <div class="image-wrapper">
+      <img
+        src="images/learning.webp"
+        alt="Daniel punching a thing to repair it" />
+    </div>
+
+    <div class="biography">
+      <p>
+        En el camino de desarrollador me he encontrado con personas grandiosas
+        que no sólo me han apoyado a resolver problemas, sino también a entender
+        mis errores, ha buscar mejores soluciones y a cooperar en conjunto para
+        lograr los mejores resultados.
+        <br />
+        Compañeros que se volvieron preciados amigos.
+      </p>
+
+      <q>
+        Creo que el trabajo en equipo es una oportunidad a explorar soluciones
+        innovadoras con diferentes perspectivas y consideraciones.
+      </q>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/coding.webp" alt="Daniel is coding in a computer" />
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="philosophy">
+    <h3><a routerLink="/home" fragment="philosophy">Filosofía</a></h3>
+
+    <p class="text-justify">
+      <q>
+        En la efímera existencia, nada perdura, y parte intrínseca de la
+        creación es la constante búsqueda de perfeccionamiento.
+      </q>
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="knowledge">
+    <h3><a routerLink="/home" fragment="knowledge">¿Qué sé?</a></h3>
+
+    <p>
+      En el camino me he encontrado con diferentes retos y problematicas
+      <br />
+      Para poder superar cada una me apoyé de distintas tecnologías y
+      herramientas
+    </p>
+    <p>Las más relevantes:</p>
+
+    <ul class="relevant-tools">
+      <li>JavaScript/Typescript</li>
+      <li>Angular</li>
+      <li>CSS/Sass</li>
+      <li>Bootstrap/Angular Material</li>
+      <li>Git,GitLab/Github</li>
+    </ul>
+
+    <p>Igual de valiosas estas otras tecnologías:</p>
+
+    <ul class="other-tools">
+      <li>Vue</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>VS Code</li>
+      <li>Storybook</li>
+      <li>Vim / NeoVim</li>
+      <li>Linux</li>
+      <li>Bash</li>
+    </ul>
+
+    <p>Y cómo objetivo, completar las siguientes:</p>
+
+    <ul class="other-tools">
+      <li>MySQL</li>
+      <li>Jest</li>
+      <li>p5.js</li>
+      <li>lua</li>
+      <li>GraphQL</li>
+      <li>React</li>
+      <li>PostgreSQL</li>
+      <li>MongoDB</li>
+      <li>php</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section id="work">
+    <h3><a routerLink="/home" fragment="work">¿Algo que mostrar?</a></h3>
+
+    <p>Aquí hay algunas cosas que puedes ver:</p>
+
+    <div class="image-container">
+      <figure class="image-wrapper">
+        <figcaption>Github Profile</figcaption>
+
+        <a target="_blank" href="https://github.com/ebriopes">
+          <img
+            src="images/profile.webp"
+            alt="Picture of Daniel, own of the site" />
+        </a>
+      </figure>
+
+      <figure class="image-wrapper">
+        <figcaption>Clon de Amazon</figcaption>
+        <a target="_blank" href="https://amanaz.web.app/">
+          <img
+            src="images/first_project.webp"
+            alt="Picture of Daniel, own of the site" />
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="card-message">
+      <h2>Trabajemos juntos!</h2>
+    </div>
+
+    <div class="contact">
+      <h3>Creemos algo interesante</h3>
+
+      <a class="button-link" [routerLink]="['/contact']">Empecemos</a>
+
+      <hr />
+
+      <div class="social-links">
+        <a
+          href="http://github.com/ebriopes"
+          target="_blank"
+          rel="noopener noreferrer">
+          <fa-icon size="3x" [icon]="faGithub"></fa-icon>
+        </a>
+
+        <a
+          href="http://linkedin.com/in/ebriopes"
+          target="_blank"
+          rel="noopener noreferrer">
+          <fa-icon size="3x" [icon]="faLinkedin"></fa-icon>
+        </a>
+
+        <a
+          href="http://facebook.com/ebriopes"
+          target="_blank"
+          rel="noopener noreferrer">
+          <fa-icon size="3x" [icon]="faFacebook"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>

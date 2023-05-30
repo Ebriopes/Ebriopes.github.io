@@ -1,0 +1,52 @@
+<main class="container">
+  <section class="row align-content-center h-100">
+    <div class="card col col-12 col-lg-6 offset-lg-3 p-3 px-md-5 py-md-4">
+      <h1>Contacto</h1>
+
+      <p>
+        Si te interesa contactarme puedes hacerlo por
+        <a target="_blank" href="https://linkedin.com/in/ebriopes">LinkedIn</a>
+        o enviandome un correo:
+      </p>
+
+      <form class="login-form" [formGroup]="mailForm">
+        <div class="form-input mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="name"
+            id="name"
+            aria-describedby="name subject" />
+        </div>
+
+        <div class="form-input mb-3">
+          <label for="subject" class="form-label">Asunto</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="subject"
+            id="subject"
+            aria-describedby="subject" />
+        </div>
+
+        <div class="form-textarea mb-3">
+          <label for="contentMessage" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            formControlName="message"
+            id="contentMessage"></textarea>
+        </div>
+
+        <div class="send-mail">
+          <button
+            [disabled]="mailForm.invalid"
+            class="btn"
+            (click)="sendMail()">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
