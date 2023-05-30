@@ -1,2 +1,5 @@
 <app-navbar [title]="title"></app-navbar>
-<router-outlet></router-outlet>
+
+<div class="page-content" [@contact-view]="getRouterAnimationState()">
+  <router-outlet></router-outlet>
+</div>
