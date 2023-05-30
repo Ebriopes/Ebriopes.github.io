@@ -1,10 +1,12 @@
 @import 'src/assets/scss';
 
 main.container {
-  height: calc(100vh - 6rem);
+  min-height: $content-height;
 
   > section {
-    height: 100%;
+    min-height: $content-height;
+    // height: 100%;
+    padding-inline: 0.5rem;
 
     div.card {
       background-color: var(--secondary);
